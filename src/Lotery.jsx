@@ -1,8 +1,9 @@
 import { useState } from "react"
-
+import "./Lotery.css"
 import { getTicket } from "./helper";
 import { sum } from "./helper";
 import Ticket from "./Ticket";
+import Button from '@mui/material/Button';
 export default function Lotery({n=3,winCondition})
 {
     // let [ticket,setTicket]=useState(getTicket(3));
@@ -16,7 +17,7 @@ export default function Lotery({n=3,winCondition})
         setTicket(getTicket(n));
     }
     return (
-        <div>
+        <div className="Lotery">
             <h1>Lotery Game!</h1>
             <div className="ticket">
             {/* <span>{ticket[0]}</span>
@@ -25,7 +26,8 @@ export default function Lotery({n=3,winCondition})
             <Ticket ticket={ticket}></Ticket>
             </div>
             <br /><br />
-            <button onClick={getRandomNumber}>Buy New Ticket</button>
+            {/* <button onClick={getRandomNumber}>Buy New Ticket</button> */}
+            <Button variant="outlined" onClick={getRandomNumber} color="secondary"><i>Buy New Ticket</i> </Button>
             <h3>{isWining ? "Congratulations you won!":"Better luck next time"}</h3>
         </div>
     )

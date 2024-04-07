@@ -1,5 +1,18 @@
-.ticket{
-    border: 1px solid pink;
-    border-radius: 14px;
-    
+
+.Lotery h1{
+    margin-top: 4rem;
+    color: #7b99c9;
+    font-style: italic;
+}
+.Lotery h3{
+    color: hsl(217, 47%, 58%);
+    font-style: italic;
+}
+Button{
+    border-radius: 18px;
+}
+@media only screen and (max-width: 450px) {
+    .Lotery h1{
+        margin-top: 2rem;
+    }
 }

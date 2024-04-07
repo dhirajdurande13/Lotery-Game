@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+.LoteryGameMain{
+    height: 400px;
+    width: 430px;
+    border: 10px solid #b2bed1;
+    border-radius: 20%;
+    margin: 2.5rem;
+    margin: auto;
+    background-color: #ebedf0;
+    box-shadow: 10px 10px 5px #b2bed1;
+}
+@media only screen and (max-width: 450px) {
+  .LoteryGameMain {
+    height: 350px;
+    width: 300px;
+  }
+}

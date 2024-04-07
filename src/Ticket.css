@@ -1,6 +1,18 @@
 .Ticket{
-    border: 1px solid pink;
-    border-radius: 14px;
+    border: 2px solid #7b99c9;
+    border-radius: 25px;
     width: 300px;
     margin-bottom: 15px;
+    margin: auto;
+    color: #7b99c9;
+    font-style: italic;
+}
+.Ticket h3{
+    color: #7b99c9;
+    font-style: italic;
+}
+@media only screen and (max-width: 450px) {
+    .Ticket{
+        width: 200px;
+    }
 }

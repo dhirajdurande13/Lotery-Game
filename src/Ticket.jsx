@@ -6,7 +6,7 @@ export default function Ticket({ticket})
         <div className="Ticket">
             {/* <TicketNum num={ticket[0]}></TicketNum>
             <TicketNum num={ticket[1]}></TicketNum> */}
-            <p>Ticket</p>
+            <h3>Ticket</h3>
            { ticket.map((ele,idx)=>(
                 <TicketNum num={ele} key={idx}></TicketNum>
             ))}
